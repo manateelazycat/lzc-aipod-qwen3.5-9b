@@ -1,0 +1,18 @@
+application:
+  subdomain: qwen35-9b-defiant-fable
+  multi_instance: true
+  background_task: true
+  routes:
+    - /=http://web.cloud.lazycat.aipod.qwen35-9b-defiant-fable.lzcapp:8080
+  public_path:
+    - /
+services:
+  web:
+    image: registry.lazycat.cloud/alpine@sha256:b12c7d46bc14b4260b9e42714688e2dbf5dee973b291a4c12e0e1539404d9f1d
+    command: /bin/sh /lzcapp/pkg/content/bootstrap.sh
+    environment:
+      - AIPOD_BACKEND_URL=http://host.lzcapp:40794
+      - QWEN35_9B_DATA_DIR=/lzcapp/var/qwen35-9b-defiant-fable
+      - QWEN35_9B_CONTROL_MANIFEST=/lzcapp/pkg/content/control-manifest.json
+ext_config:
+  enable_document_access: true

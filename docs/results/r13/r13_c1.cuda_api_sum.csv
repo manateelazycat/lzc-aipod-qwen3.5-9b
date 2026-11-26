@@ -1,0 +1,30 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r13/r13_c1.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r13/r13_c1.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r13/r13_c1.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+91.7,4686961945,5685,824443.6,870.0,638,32399263,4277263.0,cudaStreamSynchronize
+4.2,216884017,1358,159708.4,218075.5,12556,510744,105285.9,cudaGraphLaunch
+1.6,79464842,491,161842.9,1741.0,1000,41845446,2509353.1,cudaEventSynchronize
+0.9,46677776,10440,4471.1,3296.0,1129,698996,23008.0,cudaLaunchKernelExC
+0.8,39152936,7870,4975.0,2769.0,1435,229844,8676.3,cudaMemcpyAsync
+0.3,16326448,2146,7607.9,3380.0,1138,730403,39050.0,cudaLaunchKernel
+0.2,10780231,6,1796705.2,2125405.5,76853,3314562,1198384.2,cudaHostRegister
+0.1,7557706,8,944713.3,1084731.0,104175,1623420,539304.0,cudaGraphInstantiate
+0.0,1651430,17,97142.9,109390.0,3065,186566,63799.3,cudaGraphDestroy
+0.0,735623,2535,290.2,241.0,213,2204,118.8,cudaGraphKernelNodeGetAttribute
+0.0,703314,262,2684.4,2537.0,1463,11935,1339.1,cudaEventRecord
+0.0,633633,2583,245.3,222.0,157,2028,88.2,cudaGraphNodeGetType
+0.0,552883,9,61431.4,79592.0,6574,95667,34320.6,cudaGraphExecUpdate
+0.0,316307,131,2414.6,2240.0,1620,6120,598.6,cudaStreamWaitEvent
+0.0,267260,2146,124.5,102.0,65,1389,91.5,cuKernelGetName
+0.0,231646,48,4826.0,4356.5,3583,11704,1596.2,cudaMemcpy2DAsync
+0.0,156437,6,26072.8,27065.0,13195,34815,7982.7,cudaHostUnregister
+0.0,154606,17,9094.5,9556.0,732,26324,6237.8,cudaStreamEndCapture
+0.0,98663,7,14094.7,8537.0,3556,36316,12068.1,cuLaunchKernel
+0.0,95418,34,2806.4,1046.5,240,13935,4040.8,cudaGraphGetNodes
+0.0,51318,17,3018.7,2879.0,1898,5556,1058.4,cudaStreamBeginCapture
+0.0,12564,7,1794.9,1472.0,944,2759,690.8,cuLibraryGetKernel
+

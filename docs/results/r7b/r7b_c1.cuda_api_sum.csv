@@ -1,0 +1,31 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r7b/r7b_c1.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r7b/r7b_c1.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r7b/r7b_c1.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+91.4,4541270779,4783,949460.8,935.0,611,32364952,4543818.3,cudaStreamSynchronize
+4.2,211082189,1267,166600.0,218910.0,11453,403451,103923.9,cudaGraphLaunch
+1.6,79357403,488,162617.6,1727.0,1019,41810094,2514631.0,cudaEventSynchronize
+1.0,51558326,11817,4363.1,3370.0,1084,725899,21484.9,cudaLaunchKernelExC
+0.7,34582908,6842,5054.5,2768.0,1362,245308,8347.5,cudaMemcpyAsync
+0.6,30133543,2204,13672.2,3380.0,1047,13559520,291185.2,cudaLaunchKernel
+0.2,10460675,6,1743445.8,2239821.5,68436,2742934,1104739.5,cudaHostRegister
+0.1,6465039,8,808129.9,891077.0,87658,1415824,488492.3,cudaGraphInstantiate
+0.0,957263,1,957263.0,957263.0,957263,957263,0.0,cuLibraryLoadData
+0.0,849236,17,49955.1,56315.0,2361,89530,29270.4,cudaGraphDestroy
+0.0,660153,2535,260.4,250.0,194,2074,69.3,cudaGraphKernelNodeGetAttribute
+0.0,612157,270,2267.2,2171.5,1416,14121,1076.0,cudaEventRecord
+0.0,602680,2583,233.3,222.0,203,1351,43.5,cudaGraphNodeGetType
+0.0,563989,9,62665.4,57473.0,9621,121011,40663.1,cudaGraphExecUpdate
+0.0,453194,96,4720.8,4352.0,3649,11936,1414.6,cudaMemcpy2DAsync
+0.0,296212,135,2194.2,2046.0,1676,5157,538.2,cudaStreamWaitEvent
+0.0,271774,2204,123.3,111.0,46,2398,97.2,cuKernelGetName
+0.0,135254,6,22542.3,25672.0,12251,28362,6652.7,cudaHostUnregister
+0.0,100659,17,5921.1,6815.0,769,12435,3149.4,cudaStreamEndCapture
+0.0,94677,7,13525.3,6944.0,4259,33982,12083.9,cuLaunchKernel
+0.0,52288,34,1537.9,1000.0,269,4889,1334.8,cudaGraphGetNodes
+0.0,39827,17,2342.8,1759.0,1195,5065,1212.7,cudaStreamBeginCapture
+0.0,24296,8,3037.0,1579.0,713,12935,4057.1,cuLibraryGetKernel
+

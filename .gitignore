@@ -1,0 +1,10 @@
+build/
+dist/*.tar*
+dist/qwen35-9b-lpk-amd64
+dist/healthcheck-arm64
+artifacts/
+*.nsys-rep
+*.sqlite
+__pycache__/
+*.pyc
+.DS_Store

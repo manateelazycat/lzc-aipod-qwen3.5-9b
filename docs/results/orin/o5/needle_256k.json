@@ -1,0 +1,25 @@
+{
+  "meminfo_before_mb": {
+    "MemTotal": 62878.5,
+    "MemFree": 2929.6,
+    "MemAvailable": 28800.3
+  },
+  "server_rss_before_mb": 25160.8,
+  "long_context": {
+    "target_tokens": 180000,
+    "actual_prompt_tokens": 208864,
+    "elapsed_s": 395.49,
+    "approx_prefill_tok_s": 528.11,
+    "expected": "ORIN-UMA-256K",
+    "answer": "ORIN-UMA-256K",
+    "finish_reason": "stop",
+    "pass": true
+  },
+  "meminfo_after_mb": {
+    "MemTotal": 62878.5,
+    "MemFree": 3277.3,
+    "MemAvailable": 29394.2
+  },
+  "server_rss_after_mb": 25949.4,
+  "all_passed": true
+}

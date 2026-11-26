@@ -1,0 +1,139 @@
+{
+  "schema": "model-host.runtime-slim-audit.v1",
+  "target": "thor",
+  "image": "local/qwen35-9b-defiant-fable-thor:0.1.0",
+  "imageId": "sha256:f66efa272d39f5ed2506831611b5717b69f73084ba1fe83e3d47dc417c32809d",
+  "configImageId": "sha256:49c043252e3fd54f0a3d78826796c4728af109055ec2daefed1e2c88c59a3b38",
+  "runtimeImageSha256": "f66efa272d39f5ed2506831611b5717b69f73084ba1fe83e3d47dc417c32809d",
+  "archiveName": "qwen35-9b-defiant-fable-thor-0.1.0.tar.gz",
+  "archiveSizeBytes": 600118941,
+  "archiveSha256": "5bf92a5d8bec90781ab7bc7c966782e2ebcaa2fd4a3dda61de3d364729f0833e",
+  "unpackedSizeBytes": 601359809,
+  "rootfsFileCount": 25,
+  "layerCount": 2,
+  "layers": [
+    "sha256:587ec817839abecd43e0299706ec5ddb8f72d44d874f2450172e0412418f9bab",
+    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+  ],
+  "baseImage": "scratch",
+  "negativeAuditPassed": true,
+  "violations": [],
+  "containsWeights": false,
+  "containsPython": false,
+  "containsCompilersOrHeaders": false,
+  "containsStaticArchives": false,
+  "hostDriverInjectedPrefixes": [
+    "libcuda.so",
+    "libnvidia-ml.so",
+    "libnvidia-",
+    "libnvdla",
+    "libnvrm"
+  ],
+  "libraries": [
+    {
+      "soname": "/lib/ld-linux-aarch64.so.1",
+      "path": "lib/ld-linux-aarch64.so.1",
+      "bytes": 203968
+    },
+    {
+      "soname": "libc.so.6",
+      "path": "runtime/lib/libc.so.6",
+      "bytes": 1722920
+    },
+    {
+      "soname": "libcublas.so.13",
+      "path": "runtime/lib/libcublas.so.13",
+      "bytes": 67751616
+    },
+    {
+      "soname": "libcublasLt.so.13",
+      "path": "runtime/lib/libcublasLt.so.13",
+      "bytes": 606744240
+    },
+    {
+      "soname": "libcudart.so.13",
+      "path": "runtime/lib/libcudart.so.13",
+      "bytes": 773384
+    },
+    {
+      "soname": "libdl.so.2",
+      "path": "runtime/lib/libdl.so.2",
+      "bytes": 67440
+    },
+    {
+      "soname": "libgcc_s.so.1",
+      "path": "runtime/lib/libgcc_s.so.1",
+      "bytes": 133696
+    },
+    {
+      "soname": "libggml-base.so.1",
+      "path": "runtime/lib/libggml-base.so.1",
+      "bytes": 880296
+    },
+    {
+      "soname": "libggml-cpu.so.1",
+      "path": "runtime/lib/libggml-cpu.so.1",
+      "bytes": 1071920
+    },
+    {
+      "soname": "libggml-cuda.so.1",
+      "path": "runtime/lib/libggml-cuda.so.1",
+      "bytes": 103752032
+    },
+    {
+      "soname": "libggml.so.1",
+      "path": "runtime/lib/libggml.so.1",
+      "bytes": 78104
+    },
+    {
+      "soname": "libgomp.so.1",
+      "path": "runtime/lib/libgomp.so.1",
+      "bytes": 397088
+    },
+    {
+      "soname": "libllama-common.so.1",
+      "path": "runtime/lib/libllama-common.so.1",
+      "bytes": 6137592
+    },
+    {
+      "soname": "libllama-server-impl.so",
+      "path": "runtime/lib/libllama-server-impl.so",
+      "bytes": 4214336
+    },
+    {
+      "soname": "libllama.so.1",
+      "path": "runtime/lib/libllama.so.1",
+      "bytes": 5675504
+    },
+    {
+      "soname": "libm.so.6",
+      "path": "runtime/lib/libm.so.6",
+      "bytes": 591800
+    },
+    {
+      "soname": "libmtmd.so.1",
+      "path": "runtime/lib/libmtmd.so.1",
+      "bytes": 2801360
+    },
+    {
+      "soname": "libpthread.so.0",
+      "path": "runtime/lib/libpthread.so.0",
+      "bytes": 67440
+    },
+    {
+      "soname": "librt.so.1",
+      "path": "runtime/lib/librt.so.1",
+      "bytes": 67512
+    },
+    {
+      "soname": "libstdc++.so.6",
+      "path": "runtime/lib/libstdc++.so.6",
+      "bytes": 2633224
+    },
+    {
+      "soname": "libllama-completion-impl.so",
+      "path": "runtime/lib/libllama-completion-impl.so",
+      "bytes": 134264
+    }
+  ]
+}

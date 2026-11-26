@@ -1,0 +1,26 @@
+{
+  "window": "o0_c8",
+  "wallSec": 6.5284,
+  "metricsDelta": {
+    "llamacpp:n_decode_total": 97.0,
+    "llamacpp:prompt_tokens_total": 452.0,
+    "llamacpp:requests_processing": 0.0,
+    "llamacpp:tokens_predicted_seconds_total": 43.9244,
+    "llamacpp:spec_decode_num_accepted_tokens_total": 0.0,
+    "llamacpp:prompt_tokens_cached_total": 0.0,
+    "llamacpp:spec_decode_num_draft_tokens_total": 0.0,
+    "llamacpp:n_tokens_max": 0.0,
+    "llamacpp:prompt_tokens_seconds": 478.676,
+    "llamacpp:requests_deferred": 0.0,
+    "llamacpp:prompt_seconds_total": 0.9443,
+    "llamacpp:predicted_tokens_seconds": 17.3025,
+    "llamacpp:tokens_predicted_total": 768.0,
+    "llamacpp:n_busy_slots_per_decode": 1.8552,
+    "llamacpp:spec_decode_num_drafts_total": 0.0
+  },
+  "details": {
+    "wall_s": 6.528,
+    "total_tokens": 768,
+    "aggregate_tok_s": 117.64
+  }
+}

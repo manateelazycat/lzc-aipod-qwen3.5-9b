@@ -1,0 +1,58 @@
+{
+  "window": "r1_c1",
+  "wallSec": 6.7663,
+  "metricsDelta": {
+    "llamacpp:n_decode_total": 163.0,
+    "llamacpp:spec_decode_num_drafts_total": 157.0,
+    "llamacpp:prompt_tokens_cached_total": 0.0,
+    "llamacpp:predicted_tokens_seconds": -7.6028,
+    "llamacpp:spec_decode_num_accepted_tokens_total": 95.0,
+    "llamacpp:requests_deferred": 0.0,
+    "llamacpp:spec_decode_num_accepted_tokens_per_pos_total": 95.0,
+    "llamacpp:tokens_predicted_total": 256.0,
+    "llamacpp:spec_decode_num_draft_tokens_total": 157.0,
+    "llamacpp:requests_processing": 0.0,
+    "llamacpp:n_tokens_max": 0.0,
+    "llamacpp:tokens_predicted_seconds_total": 6.549,
+    "llamacpp:prompt_tokens_seconds": -472.61,
+    "llamacpp:prompt_tokens_total": 109.0,
+    "llamacpp:n_busy_slots_per_decode": 0.0,
+    "llamacpp:prompt_seconds_total": 0.1963
+  },
+  "details": {
+    "runs": [
+      {
+        "prompt_tokens": 64,
+        "completion_tokens": 128,
+        "ttft_ms": 115.31,
+        "total_s": 3.4526,
+        "decode_s": 3.3373,
+        "decode_tok_s": 38.05,
+        "e2e_tok_s": 37.07,
+        "finish_reason": "length",
+        "content": "Short answer: In modern unified-memory GPUs, bandwidth-bound decoding latency is governed by how well the attention engine can keep the high-bandwidth memory subsystem (HBM + L2) saturated while the compute units (SMs) are busy. Unified memory means the same physical DRAM is used for model weights, KV cache, and activations; the hierarchy (L1\u2192L2\u2192HBM) and the memory controller\u2019s ability to coalesce and prefetch determine whether you\u2019re compute-bound or memory-bound. In hybrid linear-attention (HLA) vs full attention (FA), the difference is mostly in how many tokens you must fetch per",
+        "reasoning": "",
+        "server_predicted_per_second": 38.06,
+        "server_prompt_per_second": 612.99,
+        "draft_n": 80,
+        "draft_n_accepted": 46
+      },
+      {
+        "prompt_tokens": 45,
+        "completion_tokens": 128,
+        "ttft_ms": 101.59,
+        "total_s": 3.3134,
+        "decode_s": 3.2118,
+        "decode_tok_s": 39.54,
+        "e2e_tok_s": 38.63,
+        "finish_reason": "length",
+        "content": "Here\u2019s a self-contained Python implementation of a bounded lock-free-style ring buffer simulator with producer/consumer backpressure metrics and unit tests.\n\nNotes:\n- \u201cLock-free style\u201d here means:\n  - Single-producer / single-consumer (SPSC) to keep it simple and correct.\n  - Uses a single atomic head/tail index with CAS-like behavior via Python\u2019s threading.Lock for the critical section.\n  - No global locks; only the critical section around index updates.\n- Metrics:\n  - Producer: produced count, blocked count, backpressure events (when full).\n  - Consumer:",
+        "reasoning": "",
+        "server_predicted_per_second": 39.54,
+        "server_prompt_per_second": 473.86,
+        "draft_n": 77,
+        "draft_n_accepted": 49
+      }
+    ]
+  }
+}

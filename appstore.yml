@@ -1,0 +1,49 @@
+package: cloud.lazycat.aipod.qwen35-9b-defiant-fable
+primary_language: zh
+kind_ids: ''
+is_original: false
+locales:
+  zh:
+    id: 0
+    name: Qwen 3.5 9B
+    brief: Jetson AGX Thor（SM110a）与 AGX Orin 64GB（SM87 / JetPack 7）双平台原生 CUDA 加速 + 无损 MTP 投机解码多模态大模型
+    description: |
+      Qwen 3.5 9B（Defiant Fable Uncensored Heretic NEO-IMATRIX-MAX-MTP）是面向懒猫 AI 算力舱双平台深度优化的 9B 图文多模态大语言模型，原生支持视觉理解、深度思考链、OpenAI 工具调用与 16K–256K 超长上下文：
+      - AGX Thor（T5000 / Dev / T4000, sm_110a）：经 20 轮 Nsight 硬件剖析与 CUDA 核优化，搭载原生无损 MTP（Q2_K 影子 Draft Head + 原生 BF16 Target 验证）与 2CTA cuBLAS FP16 预填充；单流解码 60.92 TPS（峰值 70.49 TPS，思考模式 65.70 TPS），4K 冷预填充 2,874 TPS，8 并发聚合 199–209 TPS
+      - AGX Orin 64GB（JetPack 7 / sm_87）：解锁 Ampere sm_87 Tensor Core MMA Gated DeltaNet 与 Q2_K 1-row/warp MMVQ；单流解码 43.23 TPS（峰值 50.57–53.94 TPS，较基线提速近 2×），4K 冷预填充 1,020 TPS，256K 极限上下文仍余 29.4 GiB 内存零 OOM
+      - 双平台均采用 FROM scratch 极致瘦身离线镜像（约 572 MiB，零权重、零 Python、零编译器），支持断网离线启动与懒猫 AI Pod 模型广场一键部署
+    keywords: Qwen,Qwen 3.5,9B,AI Pod,AGX Thor,AGX Orin,MTP,多模态,大模型
+    source: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
+    source_author: AI Pod
+    support_pc: true
+    support_mobile: true
+    pc_screenshots:
+      - screens/pc-1.png
+      - screens/pc-2.png
+      - screens/pc-3.png
+    mobile_screenshots:
+      - screens/mobile-1.png
+      - screens/mobile-2.png
+      - screens/mobile-3.png
+  en:
+    id: 0
+    name: Qwen 3.5 9B
+    brief: Native CUDA + lossless MTP speculative decoding multimodal LLM optimized for Jetson AGX Thor (SM110a) and AGX Orin 64GB (SM87 / JetPack 7)
+    description: |
+      Qwen 3.5 9B (Defiant Fable Uncensored Heretic NEO-IMATRIX-MAX-MTP) is a multimodal LLM deeply optimized for LazyCat AI Pod across AGX Thor and AGX Orin 64GB, supporting vision understanding, reasoning, OpenAI tool calling, and 16K–256K context:
+      - AGX Thor (T5000 / Dev / T4000, sm_110a): 20 rounds of Nsight-driven CUDA optimization with lossless native MTP (Q2_K shadow draft head + exact BF16 target verification) and 2CTA cuBLAS FP16 prefill; 60.92 TPS C=1 (peak 70.49 TPS, thinking 65.70 TPS), 2,874 TPS 4K cold prefill, 199–209 TPS at C=8
+      - AGX Orin 64GB (JetPack 7 / sm_87): Unlocked Ampere sm_87 Tensor Core MMA Gated DeltaNet and Q2_K 1-row/warp MMVQ; 43.23 TPS C=1 (peak 50.57–53.94 TPS, ~2x speedup), 1,020 TPS 4K cold prefill, 256K context with 29.4 GiB free UMA and zero OOM
+      - Pure FROM scratch offline runtime (~572 MiB, zero bundled weights, zero Python/compilers) integrated with AI Pod Model Store, OpenAI API, Pi Agent, and /metrics token accounting
+    keywords: Qwen,Qwen 3.5,9B,AI Pod,AGX Thor,AGX Orin,MTP,Multimodal,LLM
+    source: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
+    source_author: AI Pod
+    support_pc: true
+    support_mobile: true
+    pc_screenshots:
+      - screens/pc-1.png
+      - screens/pc-2.png
+      - screens/pc-3.png
+    mobile_screenshots:
+      - screens/mobile-1.png
+      - screens/mobile-2.png
+      - screens/mobile-3.png

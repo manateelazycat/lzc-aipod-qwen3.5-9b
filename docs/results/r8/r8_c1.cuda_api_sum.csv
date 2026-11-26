@@ -1,0 +1,31 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r8/r8_c1.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r8/r8_c1.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r8/r8_c1.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+91.4,4542125327,4811,944112.5,916.0,639,32444696,4516635.3,cudaStreamSynchronize
+4.2,210055695,1285,163467.5,212770.0,10648,562081,102421.1,cudaGraphLaunch
+1.6,79237619,494,160400.0,1611.0,1074,41770139,2496796.0,cudaEventSynchronize
+1.0,47419626,10628,4461.8,3351.0,1111,700713,22556.4,cudaLaunchKernelExC
+0.7,34324113,6864,5000.6,2740.0,1408,228327,8235.5,cudaMemcpyAsync
+0.6,30073323,2147,14007.1,3343.0,1185,13666480,297353.9,cudaLaunchKernel
+0.2,9975016,6,1662502.7,2023326.5,69575,2687016,1058946.4,cudaHostRegister
+0.2,7863621,8,982952.6,1189395.0,134252,1580483,555938.4,cudaGraphInstantiate
+0.0,1305841,17,76814.2,57103.0,2287,196140,61523.0,cudaGraphDestroy
+0.0,942467,1,942467.0,942467.0,942467,942467,0.0,cuLibraryLoadData
+0.0,749308,2535,295.6,241.0,176,6852,180.4,cudaGraphKernelNodeGetAttribute
+0.0,651688,272,2395.9,2250.0,1453,9463,1072.5,cudaEventRecord
+0.0,647184,2583,250.6,223.0,186,1426,82.0,cudaGraphNodeGetType
+0.0,510284,9,56698.2,60075.0,6444,91232,31523.5,cudaGraphExecUpdate
+0.0,458567,96,4776.7,4430.5,3703,10981,1218.1,cudaMemcpy2DAsync
+0.0,286456,136,2106.3,1926.0,1537,6630,664.6,cudaStreamWaitEvent
+0.0,269508,2147,125.5,111.0,92,1630,102.0,cuKernelGetName
+0.0,140603,6,23433.8,23500.0,13231,29251,5889.6,cudaHostUnregister
+0.0,126482,17,7440.1,7037.0,777,21296,5019.4,cudaStreamEndCapture
+0.0,110768,34,3257.9,1069.0,231,16991,5089.9,cudaGraphGetNodes
+0.0,94577,7,13511.0,7556.0,4667,39085,12622.4,cuLaunchKernel
+0.0,47176,17,2775.1,2528.0,1250,5343,1347.6,cudaStreamBeginCapture
+0.0,24067,8,3008.4,1671.0,760,13510,4261.4,cuLibraryGetKernel
+

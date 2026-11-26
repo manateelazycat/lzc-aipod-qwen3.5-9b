@@ -1,0 +1,11 @@
+error while handling argument "--spec-type": unknown speculative type: mtp
+
+usage:
+--spec-type none,draft-simple,draft-eagle3,draft-mtp,draft-dflash,draft-dspark,draft-dflash2,draft-lilicorr,ngram-simple,ngram-map-k,ngram-map-k4v,ngram-mod,ngram-cache
+                                        comma-separated list of types of speculative decoding to use (default:
+                                        none)
+                                        
+                                        (env: LLAMA_ARG_SPEC_TYPE)
+
+
+to show complete usage, run with -h

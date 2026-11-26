@@ -1,0 +1,49 @@
+{
+  "meminfo_before_mb": {
+    "MemTotal": 62878.5,
+    "MemFree": 10503.8,
+    "MemAvailable": 36788.3
+  },
+  "server_rss_before_mb": 17834.3,
+  "gates": {
+    "guard_induced_loop": {
+      "finish_reason": "stop",
+      "completion_tokens": 98,
+      "elapsed_s": 1.9,
+      "pass": true
+    },
+    "guard_markdown_table_no_fp": {
+      "finish_reason": "stop",
+      "has_all_12_rows": true,
+      "content_len": 619,
+      "pass": true
+    },
+    "guard_ignore_eos_bypass": {
+      "finish_reason": "length",
+      "completion_tokens": 220,
+      "pass": true
+    },
+    "default_sampling_non_greedy": {
+      "finish_reason": "stop",
+      "answer": "399",
+      "pass": true
+    }
+  },
+  "long_context": {
+    "target_tokens": 95000,
+    "actual_prompt_tokens": 110268,
+    "elapsed_s": 156.39,
+    "approx_prefill_tok_s": 705.09,
+    "expected": "ORIN-AMPERE-8700",
+    "answer": "ORIN-AMPERE-8700",
+    "finish_reason": "stop",
+    "pass": true
+  },
+  "meminfo_after_mb": {
+    "MemTotal": 62878.5,
+    "MemFree": 8668.4,
+    "MemAvailable": 34954.8
+  },
+  "server_rss_after_mb": 19096.5,
+  "all_passed": true
+}

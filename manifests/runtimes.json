@@ -1,0 +1,145 @@
+{
+  "schema": "model-host.runtime-images.v1",
+  "status": "released",
+  "targets": {
+    "thor": {
+      "target": "thor",
+      "displayName": "Jetson AGX Thor (T5000 / Dev / T4000, SM110a)",
+      "image": "local/qwen35-9b-defiant-fable-thor:0.2.0",
+      "imageId": "sha256:d36d871a1ac946ed4e94a01fea8932b33502a4cddd7d8e3fa96374a84ebc0ddf",
+      "configImageId": "sha256:46a4bd2f3dc2388896f6e43040fca37b6e1352049dc8e4278c077f9ef0b6f78f",
+      "runtimeImageSha256": "d36d871a1ac946ed4e94a01fea8932b33502a4cddd7d8e3fa96374a84ebc0ddf",
+      "name": "qwen35-9b-defiant-fable-thor-0.2.0.tar.gz",
+      "size": 600403959,
+      "unpackedSize": 601643502,
+      "sha256": "c38e56c8f1c599ee3ee696adc08d5f8ebef69ff88f3d88241a3c692d6dfdb248",
+      "compatibility": {
+        "architecture": "arm64",
+        "gpuArchitecture": "sm_110a",
+        "cudaVersion": "13.2",
+        "l4tPrefixes": ["38.4.", "39."]
+      },
+      "launchProfile": {
+        "engine": "llamacpp",
+        "quantization": "Q4_K_M-NEO-IMATRIX-MTP",
+        "kvCacheDtype": "q8_0",
+        "maxNumSeqs": 8,
+        "speculativeMethod": "draft-mtp",
+        "numSpeculativeTokens": 3,
+        "reasoningFormat": "deepseek",
+        "modelFile": "Qwen3.5-9B-The-Defiant-Fable-Uncnr-Heretic-NEO-MAX-MTP-Q4_K_M.gguf",
+        "mmprojFile": "mmproj-F16.gguf",
+        "extraArgs": [
+          "--cache-reuse", "256",
+          "-b", "4096",
+          "-ub", "4096",
+          "--temp", "0.7",
+          "--top-p", "0.85",
+          "--top-k", "20",
+          "-t", "8",
+          "-tb", "12",
+          "--poll", "100"
+        ],
+        "extraEnv": {
+          "GGML_CUDA_ACT_CACHE": "1",
+          "GGML_CUDA_ASYNC_DEQUANT": "0",
+          "GGML_CUDA_BINBCAST_VEC4": "1",
+          "GGML_CUDA_CUBLAS_COMPUTE_TYPE": "quant_f16",
+          "GGML_CUDA_F16_PREFER_F32_OUT": "1",
+          "GGML_CUDA_GLU_VEC4": "1",
+          "GGML_CUDA_MMQ_FEW_MAX_NCG": "4",
+          "GGML_CUDA_MMQ_MAX_BATCH": "256",
+          "GGML_CUDA_PDL": "1",
+          "LLAMA_MTP_ADAPTIVE": "1",
+          "LLAMA_MTP_ADAPTIVE_K_HIGH": "2",
+          "LLAMA_MTP_ADAPTIVE_K_LOW": "3",
+          "LLAMA_MTP_ADAPTIVE_K_MID": "2",
+          "LLAMA_MTP_DRAFT_HEAD_TYPE": "q2_k",
+          "OMP_NUM_THREADS": "8"
+        }
+      },
+      "sources": {
+        "huggingface": {
+          "repository": "manateelazycat/Qwen3.5-9B-Defiant-Fable-Runtime",
+          "revision": "d39501b59132d4fc73f4c0b0f1a1d85ebf3c1f43",
+          "path": "thor/qwen35-9b-defiant-fable-thor-0.2.0.tar.gz"
+        },
+        "modelscope": {
+          "repository": "manateelazycat/Qwen3.5-9B-Defiant-Fable-Runtime",
+          "revision": "d5824bd7a26f7a7aa38e257ec92cc65086014d40",
+          "path": "thor/qwen35-9b-defiant-fable-thor-0.2.0.tar.gz"
+        }
+      }
+    },
+    "orin": {
+      "target": "orin",
+      "displayName": "Jetson AGX Orin 64GB (JetPack 7, SM87)",
+      "image": "local/qwen35-9b-defiant-fable-orin:0.2.0",
+      "imageId": "sha256:66ed94b476f9cdd217766f0a7324c1ef43941e096523129c61650c275a3dd790",
+      "configImageId": "sha256:9187de5ee0f955f63bdf54cd7dd78cbf62723cac023279fc881a6b61aa74a84f",
+      "runtimeImageSha256": "66ed94b476f9cdd217766f0a7324c1ef43941e096523129c61650c275a3dd790",
+      "name": "qwen35-9b-defiant-fable-orin-0.2.0.tar.gz",
+      "size": 599629994,
+      "unpackedSize": 1412320716,
+      "sha256": "d282e0aa35feb8e60584ddc73a4f209d058667ed617a4dc85bd2e7b4b5a7cc3a",
+      "compatibility": {
+        "architecture": "arm64",
+        "gpuArchitecture": "sm_87",
+        "cudaVersion": "13.2",
+        "l4tPrefixes": ["39."]
+      },
+      "launchProfile": {
+        "engine": "llamacpp",
+        "quantization": "Q4_K_M-NEO-IMATRIX-MTP",
+        "kvCacheDtype": "q8_0",
+        "maxNumSeqs": 8,
+        "speculativeMethod": "draft-mtp",
+        "numSpeculativeTokens": 3,
+        "reasoningFormat": "deepseek",
+        "modelFile": "Qwen3.5-9B-The-Defiant-Fable-Uncnr-Heretic-NEO-MAX-MTP-Q4_K_M.gguf",
+        "mmprojFile": "mmproj-F16.gguf",
+        "extraArgs": [
+          "--cache-reuse", "256",
+          "-b", "4096",
+          "-ub", "4096",
+          "--temp", "0.7",
+          "--top-p", "0.85",
+          "--top-k", "20",
+          "-t", "4",
+          "-tb", "8",
+          "--poll", "100"
+        ],
+        "extraEnv": {
+          "GGML_CUDA_ACT_CACHE": "1",
+          "GGML_CUDA_ASYNC_DEQUANT": "0",
+          "GGML_CUDA_BINBCAST_VEC4": "1",
+          "GGML_CUDA_CUBLAS_COMPUTE_TYPE": "quant_f16",
+          "GGML_CUDA_F16_PREFER_F32_OUT": "1",
+          "GGML_CUDA_GLU_VEC4": "1",
+          "GGML_CUDA_MMF_MAX_BATCH": "8",
+          "GGML_CUDA_MMQ_FEW_MAX_NCG": "4",
+          "GGML_CUDA_MMQ_MAX_BATCH": "256",
+          "GGML_CUDA_PDL": "0",
+          "LLAMA_MTP_ADAPTIVE": "1",
+          "LLAMA_MTP_ADAPTIVE_K_HIGH": "1",
+          "LLAMA_MTP_ADAPTIVE_K_LOW": "3",
+          "LLAMA_MTP_ADAPTIVE_K_MID": "2",
+          "LLAMA_MTP_DRAFT_HEAD_TYPE": "q2_k",
+          "OMP_NUM_THREADS": "4"
+        }
+      },
+      "sources": {
+        "huggingface": {
+          "repository": "manateelazycat/Qwen3.5-9B-Defiant-Fable-Runtime",
+          "revision": "d39501b59132d4fc73f4c0b0f1a1d85ebf3c1f43",
+          "path": "orin/qwen35-9b-defiant-fable-orin-0.2.0.tar.gz"
+        },
+        "modelscope": {
+          "repository": "manateelazycat/Qwen3.5-9B-Defiant-Fable-Runtime",
+          "revision": "d5824bd7a26f7a7aa38e257ec92cc65086014d40",
+          "path": "orin/qwen35-9b-defiant-fable-orin-0.2.0.tar.gz"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r0/r0_c8.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r0/r0_c8.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r0/r0_c8.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+91.9,3619546945,4827,749854.3,769.0,630,238362216,5944143.4,cudaStreamSynchronize
+3.5,137523528,360,382009.8,377127.0,271828,696087,38907.2,cudaGraphLaunch
+2.2,86153305,2599,33148.6,3213.0,2778,50743615,1077973.1,cudaLaunchKernel
+1.2,45322015,13409,3380.0,3157.0,1111,1181512,13817.7,cudaLaunchKernelExC
+0.6,24228597,9,2692066.3,2066703.0,1708623,7805620,1922739.9,cudaHostRegister
+0.3,10619578,1399,7590.8,2797.0,2102,219477,12009.1,cudaMemcpyAsync
+0.1,4241667,4,1060416.8,1099255.5,792403,1250753,212213.9,cudaGraphInstantiate
+0.1,2516303,2,1258151.5,1258151.5,903127,1613176,502080.5,cuLibraryLoadData
+0.1,1971247,4,492811.8,526754.0,341423,576316,107530.0,cudaGraphExecDestroy
+0.0,1434895,16,89680.9,101071.0,6223,189086,59469.8,cudaGraphExecUpdate
+0.0,1347109,16,84194.3,81802.5,52538,113048,20055.3,cudaGraphDestroy
+0.0,1088432,4240,256.7,241.0,194,1954,61.4,cudaGraphKernelNodeGetAttribute
+0.0,982378,4240,231.7,222.0,157,1241,33.4,cudaGraphNodeGetType
+0.0,304346,2599,117.1,102.0,55,2583,115.1,cuKernelGetName
+0.0,197302,16,12331.4,12337.5,7852,18741,2984.5,cudaStreamEndCapture
+0.0,170154,9,18906.0,15065.0,12871,36510,7845.8,cudaHostUnregister
+0.0,49530,16,3095.6,1959.0,1296,8056,2499.8,cudaStreamBeginCapture
+0.0,49159,32,1536.2,1365.5,973,2963,549.2,cudaGraphGetNodes
+0.0,23908,2,11954.0,11954.0,4750,19158,10188.0,cuLaunchKernel
+0.0,13566,11,1233.3,1240.0,685,1620,307.7,cuLibraryGetKernel
+

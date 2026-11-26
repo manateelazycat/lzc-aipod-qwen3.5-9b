@@ -1,0 +1,58 @@
+{
+  "window": "o3_c1",
+  "wallSec": 7.0118,
+  "metricsDelta": {
+    "llamacpp:requests_processing": 0.0,
+    "llamacpp:tokens_predicted_total": 256.0,
+    "llamacpp:prompt_seconds_total": 0.3337,
+    "llamacpp:spec_decode_num_accepted_tokens_total": 142.0,
+    "llamacpp:n_busy_slots_per_decode": 0.0,
+    "llamacpp:n_decode_total": 116.0,
+    "llamacpp:spec_decode_num_drafts_total": 111.0,
+    "llamacpp:spec_decode_num_draft_tokens_total": 329.0,
+    "llamacpp:tokens_predicted_seconds_total": 6.6349,
+    "llamacpp:n_tokens_max": 0.0,
+    "llamacpp:prompt_tokens_seconds": -347.457,
+    "llamacpp:requests_deferred": 0.0,
+    "llamacpp:prompt_tokens_cached_total": 0.0,
+    "llamacpp:prompt_tokens_total": 109.0,
+    "llamacpp:spec_decode_num_accepted_tokens_per_pos_total": 142.0,
+    "llamacpp:predicted_tokens_seconds": 8.5509
+  },
+  "details": {
+    "runs": [
+      {
+        "prompt_tokens": 64,
+        "completion_tokens": 128,
+        "ttft_ms": 209.1,
+        "total_s": 3.9453,
+        "decode_s": 3.7362,
+        "decode_tok_s": 33.99,
+        "e2e_tok_s": 32.44,
+        "finish_reason": "length",
+        "content": "Short answer: In modern unified-memory GPUs, decoding latency for hybrid linear-attention (HLA) and full-attention (FA) models is dominated by how fast you can move tokens between LPDDR5X system memory, L2 cache, and the compute tiles that hold L1/shared memory. Bandwidth is the bottleneck; latency is a function of (tokens to fetch) / (effective bandwidth) plus small fixed overheads. HLA reduces the tokens you must fetch per step, so it directly cuts the bandwidth demand and thus the decoding latency.\n\nBelow is a concrete, quantitative breakdown.\n\n1. Unified-memory memory hierarchy and",
+        "reasoning": "",
+        "server_predicted_per_second": 33.99,
+        "server_prompt_per_second": 341.92,
+        "draft_n": 183,
+        "draft_n_accepted": 64
+      },
+      {
+        "prompt_tokens": 45,
+        "completion_tokens": 128,
+        "ttft_ms": 167.26,
+        "total_s": 3.0661,
+        "decode_s": 2.8988,
+        "decode_tok_s": 43.81,
+        "e2e_tok_s": 41.75,
+        "finish_reason": "length",
+        "content": "Here\u2019s a self-contained Python implementation of a bounded lock-free-style ring buffer simulator with producer/consumer backpressure metrics and unit tests.\n\nNotes:\n- \u201cLock-free style\u201d here means:\n  - Single-producer / single-consumer (SPSC) to keep it simple and correct without heavy atomics.\n  - Uses a head/tail pointer scheme with wrap-around.\n  - No Python-level locks; concurrency is simulated via cooperative scheduling.\n- Backpressure metrics:\n  - Producer: number of times it was blocked because the buffer was full.\n  - Consumer: number of times it was blocked",
+        "reasoning": "",
+        "server_predicted_per_second": 43.81,
+        "server_prompt_per_second": 296.74,
+        "draft_n": 146,
+        "draft_n_accepted": 78
+      }
+    ]
+  }
+}

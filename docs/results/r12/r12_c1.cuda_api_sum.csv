@@ -1,0 +1,30 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r12/r12_c1.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r12/r12_c1.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r12/r12_c1.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+91.9,4677673185,5756,812660.4,879.5,648,32411066,4185474.9,cudaStreamSynchronize
+4.2,212115981,1380,153707.2,207775.0,10731,1159878,107178.0,cudaGraphLaunch
+1.6,79257468,504,157256.9,1694.5,907,41837512,2470754.2,cudaEventSynchronize
+0.9,45203973,10440,4329.9,3213.0,1092,698745,23075.6,cudaLaunchKernelExC
+0.8,38287237,7985,4794.9,2704.0,1250,413205,9222.6,cudaMemcpyAsync
+0.3,16179840,2146,7539.5,3315.0,1112,730106,39178.8,cudaLaunchKernel
+0.2,10493461,6,1748910.2,2135619.0,89538,3026759,1136066.9,cudaHostRegister
+0.1,6443207,8,805400.9,911233.0,56222,1328888,489914.0,cudaGraphInstantiate
+0.0,811479,17,47734.1,57676.0,2260,79834,27402.1,cudaGraphDestroy
+0.0,666361,266,2505.1,2384.0,1426,10139,1052.2,cudaEventRecord
+0.0,659529,2535,260.2,259.0,203,1899,63.3,cudaGraphKernelNodeGetAttribute
+0.0,605457,2583,234.4,222.0,194,1231,40.3,cudaGraphNodeGetType
+0.0,553846,9,61538.4,66186.0,8732,103279,35937.0,cudaGraphExecUpdate
+0.0,305813,133,2299.3,2092.0,1648,5343,657.8,cudaStreamWaitEvent
+0.0,272312,2146,126.9,102.0,46,12408,280.6,cuKernelGetName
+0.0,228076,48,4751.6,4314.5,3629,11815,1628.2,cudaMemcpy2DAsync
+0.0,131448,6,21908.0,23570.0,13602,27917,5873.1,cudaHostUnregister
+0.0,96027,17,5648.6,6444.0,768,10824,2980.9,cudaStreamEndCapture
+0.0,93836,7,13405.1,7158.0,3833,34714,11604.9,cuLaunchKernel
+0.0,53880,34,1584.7,1037.0,240,4982,1412.1,cudaGraphGetNodes
+0.0,40242,17,2367.2,1805.0,1185,5926,1409.8,cudaStreamBeginCapture
+0.0,10648,7,1521.1,1537.0,565,2907,810.5,cuLibraryGetKernel
+

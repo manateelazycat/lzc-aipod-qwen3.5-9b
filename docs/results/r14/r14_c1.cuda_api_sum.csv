@@ -1,0 +1,31 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r14/r14_c1.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r14/r14_c1.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r14/r14_c1.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+91.2,4531771932,5582,811854.5,852.0,639,32673207,4237946.3,cudaStreamSynchronize
+4.3,213111954,1317,161816.2,224215.0,12389,564662,107940.8,cudaGraphLaunch
+1.6,79234977,478,165763.6,1782.5,870,41819867,2536122.7,cudaEventSynchronize
+1.0,47339531,10628,4454.2,3287.0,1093,723608,22759.0,cudaLaunchKernelExC
+0.8,39194860,7686,5099.5,2732.0,1379,1241463,16522.2,cudaMemcpyAsync
+0.6,31264695,2147,14562.0,3315.0,1167,14867295,323083.7,cudaLaunchKernel
+0.2,10846001,6,1807666.8,2149708.0,68723,3322594,1207720.9,cudaHostRegister
+0.2,7792723,8,974090.4,1152727.5,106620,1620375,574525.0,cudaGraphInstantiate
+0.0,1530163,17,90009.6,102954.0,4250,167483,56251.7,cudaGraphDestroy
+0.0,1075444,1,1075444.0,1075444.0,1075444,1075444,0.0,cuLibraryLoadData
+0.0,761086,2535,300.2,241.0,185,2028,133.6,cudaGraphKernelNodeGetAttribute
+0.0,683778,254,2692.0,2611.0,1408,19436,1488.2,cudaEventRecord
+0.0,653571,2583,253.0,223.0,166,1861,92.8,cudaGraphNodeGetType
+0.0,530577,9,58953.0,65120.0,9361,96334,32648.4,cudaGraphExecUpdate
+0.0,345112,127,2717.4,2555.0,1583,6620,719.1,cudaStreamWaitEvent
+0.0,270746,2147,126.1,102.0,65,1880,104.7,cuKernelGetName
+0.0,227967,48,4749.3,4352.0,3639,10990,1519.8,cudaMemcpy2DAsync
+0.0,163500,17,9617.6,9843.0,834,26907,6607.2,cudaStreamEndCapture
+0.0,146677,6,24446.2,24416.5,13009,34677,7038.3,cudaHostUnregister
+0.0,112085,34,3296.6,1208.0,250,17583,4774.0,cudaGraphGetNodes
+0.0,88242,7,12606.0,9306.0,4130,31241,9429.5,cuLaunchKernel
+0.0,54130,17,3184.1,2750.0,1694,5510,1031.7,cudaStreamBeginCapture
+0.0,24813,8,3101.6,1861.0,695,13277,4176.5,cuLibraryGetKernel
+

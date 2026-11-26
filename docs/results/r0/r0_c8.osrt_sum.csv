@@ -1,0 +1,23 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r0/r0_c8.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r0/r0_c8.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r0/r0_c8.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/osrt_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+32.3,38742646919,319,121450303.8,2713438.0,4268,14868656223,1063230610.3,pthread_cond_wait
+29.3,35141983572,110,319472577.9,128225.0,6565,2692836785,872832692.7,futex
+28.2,33825507533,6149,5500977.0,325876.0,1926,340469159,17731357.8,pthread_cond_clockwait
+7.1,8512541215,762,11171313.9,1306.0,1000,100511885,31535501.8,poll
+3.1,3707003801,269,13780683.3,39844.0,1010,103982243,18360584.7,ioctl
+0.0,38550381,7,5507197.3,354978.0,4250,35976233,13442414.1,accept4
+0.0,38079240,2124,17928.1,13764.0,1000,120928,13774.2,pthread_mutex_lock
+0.0,7382609,808,9136.9,7768.5,1889,44658,4814.3,send
+0.0,5806363,975,5955.2,6694.0,1148,33048,2366.5,pthread_cond_broadcast
+0.0,252988,130,1946.1,1921.5,1083,4148,376.5,pthread_cond_signal
+0.0,75860,8,9482.5,8018.5,5676,15129,3903.5,close
+0.0,71714,1,71714.0,71714.0,71714,71714,0.0,mmap64
+0.0,47573,16,2973.3,2949.0,1028,4935,1357.1,recv
+0.0,43298,8,5412.3,5379.5,3185,7741,1467.5,shutdown
+0.0,14844,1,14844.0,14844.0,14844,14844,0.0,open64
+

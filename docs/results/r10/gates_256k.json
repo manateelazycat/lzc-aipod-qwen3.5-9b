@@ -1,0 +1,25 @@
+{
+  "meminfo_before_mb": {
+    "MemTotal": 125810.2,
+    "MemFree": 34941.0,
+    "MemAvailable": 96182.0
+  },
+  "server_rss_before_mb": 5687.9,
+  "long_context": {
+    "target_tokens": 195000,
+    "actual_prompt_tokens": 226270,
+    "elapsed_s": 240.39,
+    "approx_prefill_tok_s": 941.25,
+    "expected": "AURORA-QUARTZ-5283",
+    "answer": "AURORA-QUARTZ-5283",
+    "finish_reason": "stop",
+    "pass": true
+  },
+  "meminfo_after_mb": {
+    "MemTotal": 125810.2,
+    "MemFree": 34086.2,
+    "MemAvailable": 94749.9
+  },
+  "server_rss_after_mb": 6131.9,
+  "all_passed": true
+}

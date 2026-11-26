@@ -1,0 +1,30 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r10/r10_c1.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r10/r10_c1.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r10/r10_c1.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+91.5,4651802345,4864,956373.8,917.0,639,32155315,4558922.9,cudaStreamSynchronize
+4.6,234322933,1313,178463.8,227919.0,12879,450172,110453.8,cudaGraphLaunch
+1.6,79002645,505,156440.9,1629.0,982,41698955,2460198.8,cudaEventSynchronize
+0.8,42118827,9439,4462.2,3195.0,1111,696878,23566.0,cudaLaunchKernelExC
+0.7,36363861,6931,5246.6,2787.0,1333,247503,8554.2,cudaMemcpyAsync
+0.3,16183537,2090,7743.3,3352.0,1111,699295,39193.8,cudaLaunchKernel
+0.2,10784019,6,1797336.5,2235525.0,89741,3008858,1157097.5,cudaHostRegister
+0.1,6432887,8,804110.9,866505.5,92760,1397395,485845.2,cudaGraphInstantiate
+0.0,1231169,17,72421.7,82631.0,2898,158085,47664.1,cudaGraphDestroy
+0.0,710331,276,2573.7,2457.5,1426,12454,1068.7,cudaEventRecord
+0.0,679941,2535,268.2,241.0,185,4760,118.6,cudaGraphKernelNodeGetAttribute
+0.0,651007,2583,252.0,231.0,194,30769,602.8,cudaGraphNodeGetType
+0.0,629360,9,69928.9,85010.0,9704,116872,40332.5,cudaGraphExecUpdate
+0.0,465757,96,4851.6,4375.5,3659,12120,1586.4,cudaMemcpy2DAsync
+0.0,354836,138,2571.3,2384.5,1630,7453,762.3,cudaStreamWaitEvent
+0.0,262228,2090,125.5,102.0,56,7176,185.5,cuKernelGetName
+0.0,134157,6,22359.5,25074.0,12296,29167,6995.8,cudaHostUnregister
+0.0,133649,17,7861.7,6454.0,796,18935,5454.6,cudaStreamEndCapture
+0.0,102937,7,14705.3,7648.0,4241,31399,11602.7,cuLaunchKernel
+0.0,57503,34,1691.3,1009.0,222,6333,1572.4,cudaGraphGetNodes
+0.0,43296,17,2546.8,2046.0,1482,5389,1209.2,cudaStreamBeginCapture
+0.0,9426,7,1346.6,1370.0,593,2148,537.3,cuLibraryGetKernel
+

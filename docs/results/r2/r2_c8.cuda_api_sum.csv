@@ -1,0 +1,34 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r2/r2_c8.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r2/r2_c8.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r2/r2_c8.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+83.0,3307199093,9589,344895.1,741.0,630,193510735,3646547.6,cudaStreamSynchronize
+5.0,198409102,4636,42797.5,3324.0,1139,35617487,840179.0,cudaLaunchKernel
+3.6,143908901,37753,3811.9,3371.0,1102,992918,12310.1,cudaLaunchKernelExC
+2.6,102680244,396,259293.5,273743.5,55899,422653,83632.3,cudaGraphLaunch
+1.4,55087787,1244,44282.8,713.0,620,53632661,1520581.6,cudaEventSynchronize
+1.2,47423205,6523,7270.2,3435.0,1148,218252,10587.7,cudaMemcpyAsync
+1.2,46443989,2,23221994.5,23221994.5,23129706,23314283,130515.6,cudaMallocHost
+0.7,25925108,10,2592510.8,2231440.5,1185873,7622303,1803229.0,cudaHostRegister
+0.6,22772472,2,11386236.0,11386236.0,10490028,12282444,1267429.5,cudaFreeHost
+0.3,10874475,9,1208275.0,977278.0,794202,2015428,440031.8,cuLibraryLoadData
+0.2,7913468,312,25363.7,4060.5,3398,1724768,178969.7,cudaMemcpy2DAsync
+0.2,6287151,35,179632.9,60157.0,9056,875703,280679.1,cudaGraphExecUpdate
+0.0,1802583,35,51502.4,53103.0,9648,109371,20655.7,cudaGraphDestroy
+0.0,1407850,5483,256.8,241.0,185,1796,69.1,cudaGraphKernelNodeGetAttribute
+0.0,1298347,5579,232.7,222.0,157,6722,99.5,cudaGraphNodeGetType
+0.0,1242790,3,414263.3,404624.0,343114,495052,76426.3,cudaGraphInstantiate
+0.0,698021,132,5288.0,5444.5,1657,11713,3131.7,cudaEventRecord
+0.0,600273,4636,129.5,102.0,37,2592,131.8,cuKernelGetName
+0.0,547618,3,182539.3,218447.0,99705,229466,71947.9,cudaGraphExecDestroy
+0.0,283367,66,4293.4,3967.5,2917,13935,1575.6,cudaStreamWaitEvent
+0.0,233166,35,6661.9,7000.0,1639,11694,2376.3,cudaStreamEndCapture
+0.0,207967,10,20796.7,16278.5,13695,43241,9228.8,cudaHostUnregister
+0.0,118690,35,3391.1,1936.0,1223,7870,2424.4,cudaStreamBeginCapture
+0.0,83778,70,1196.8,1088.0,315,2528,494.0,cudaGraphGetNodes
+0.0,36953,2,18476.5,18476.5,7203,29750,15943.1,cuLaunchKernel
+0.0,30613,18,1700.7,1153.0,833,10009,2097.5,cuLibraryGetKernel
+

@@ -1,0 +1,31 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r6/r6_c1.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r6/r6_c1.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r6/r6_c1.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+91.5,4622016792,5416,853400.4,843.0,620,32501084,4093389.2,cudaStreamSynchronize
+3.9,195558420,1254,155947.7,214351.0,12667,456730,105498.1,cudaGraphLaunch
+1.6,79097151,457,173079.1,1574.0,916,41862111,2594263.3,cudaEventSynchronize
+1.0,50917945,11817,4308.9,3334.0,1120,733725,21631.1,cudaLaunchKernelExC
+0.9,44639116,2204,20253.7,3361.0,1157,14141543,424845.3,cudaLaunchKernel
+0.7,34539277,7434,4646.1,2676.0,1296,232356,7402.4,cudaMemcpyAsync
+0.2,10263691,6,1710615.2,2116304.0,114677,3104774,1104798.7,cudaHostRegister
+0.2,7994096,8,999262.0,879894.5,74130,3032532,918284.7,cudaGraphInstantiate
+0.0,1834133,2,917066.5,917066.5,892941,941192,34118.6,cuLibraryLoadData
+0.0,846363,17,49786.1,57992.0,2297,82232,26975.1,cudaGraphDestroy
+0.0,652176,2535,257.3,241.0,222,2074,65.5,cudaGraphKernelNodeGetAttribute
+0.0,594310,2583,230.1,222.0,185,1352,43.3,cudaGraphNodeGetType
+0.0,558151,244,2287.5,2296.5,1342,8250,760.3,cudaEventRecord
+0.0,546415,9,60712.8,60548.0,8092,113196,34374.2,cudaGraphExecUpdate
+0.0,269992,2204,122.5,111.0,65,2380,91.6,cuKernelGetName
+0.0,269208,122,2206.6,2079.0,1722,5537,546.9,cudaStreamWaitEvent
+0.0,227750,48,4744.8,4320.0,3852,11491,1470.1,cudaMemcpy2DAsync
+0.0,130829,6,21804.8,23667.0,13297,28094,6261.6,cudaHostUnregister
+0.0,93236,17,5484.5,5917.0,843,10917,2734.8,cudaStreamEndCapture
+0.0,77027,5,15405.4,6981.0,6055,31121,12350.2,cuLaunchKernel
+0.0,53233,34,1565.7,1018.5,250,5380,1392.3,cudaGraphGetNodes
+0.0,41187,17,2422.8,1731.0,1436,5713,1352.5,cudaStreamBeginCapture
+0.0,13011,9,1445.7,1287.0,824,2657,602.3,cuLibraryGetKernel
+

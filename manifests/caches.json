@@ -1,0 +1,5 @@
+{
+  "schema": "model-host.runtime-caches.v1",
+  "status": "released",
+  "caches": {}
+}

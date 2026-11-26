@@ -1,0 +1,106 @@
+{
+  "timestamp": "2026-11-26T11:23:57Z",
+  "label": "r18-all_on",
+  "url": "http://127.0.0.1:18156",
+  "model": "qwen3.5-9b-defiant-fable",
+  "c1": {
+    "median_decode_tok_s": 54.9,
+    "max_decode_tok_s": 62.09,
+    "median_e2e_tok_s": 53.64,
+    "median_ttft_ms": 116.25,
+    "think_decode_tok_s": 65.08,
+    "mtp_draft_n": 1043,
+    "mtp_draft_accepted": 414,
+    "mtp_accept_rate": 0.3969,
+    "runs": [
+      {
+        "prompt_tokens": 67,
+        "completion_tokens": 256,
+        "ttft_ms": 127.76,
+        "decode_tok_s": 54.9,
+        "e2e_tok_s": 53.64,
+        "total_s": 4.7725
+      },
+      {
+        "prompt_tokens": 48,
+        "completion_tokens": 256,
+        "ttft_ms": 99.69,
+        "decode_tok_s": 62.09,
+        "e2e_tok_s": 60.85,
+        "total_s": 4.2068
+      },
+      {
+        "prompt_tokens": 74,
+        "completion_tokens": 256,
+        "ttft_ms": 116.25,
+        "decode_tok_s": 54.07,
+        "e2e_tok_s": 52.97,
+        "total_s": 4.8325
+      }
+    ]
+  },
+  "prefill": {
+    "prompt_tokens": 4112,
+    "ttft_ms": 1406.81,
+    "prefill_tok_s": 2922.92,
+    "server_prompt_per_second": 2944.5
+  },
+  "concurrency": {
+    "c4": {
+      "concurrency": 4,
+      "wall_s": 4.1,
+      "total_completion_tokens": 512,
+      "aggregate_tok_s": 124.89,
+      "per_stream_median_decode_tok_s": 38.59
+    },
+    "c8": {
+      "concurrency": 8,
+      "wall_s": 5.003,
+      "total_completion_tokens": 1024,
+      "aggregate_tok_s": 204.7,
+      "per_stream_median_decode_tok_s": 32.08
+    }
+  },
+  "checks": {
+    "math_17x23_fast": {
+      "pass": true,
+      "answer": "391"
+    },
+    "math_4386_think": {
+      "pass": true,
+      "reasoning_len": 297,
+      "answer": " 2740\n- 137 × 9 = 1233\n- 2740 + 1233 = 3973\n\nStep 2: Add 413\n- 3973 + 413 = 4386\n\nFinal answer:\n4386"
+    },
+    "tool_call": {
+      "pass": true,
+      "calls": [
+        {
+          "name": "get_weather",
+          "arguments": "{\"city\":\"Tokyo\",\"unit\":\"celsius\"}"
+        }
+      ],
+      "raw_content": ""
+    },
+    "vision_multimodal": {
+      "pass": true,
+      "answer": "Red and blue."
+    },
+    "needle_16k": {
+      "pass": true,
+      "expected": "JUNIPER-PYLON-9737",
+      "prompt_tokens": 15932,
+      "answer": "JUNIPER-PYLON-9737"
+    },
+    "metrics_delta": {
+      "pass": true,
+      "delta": {
+        "llamacpp:prompt_tokens_total": 21409.0,
+        "llamacpp:tokens_predicted_total": 2934.0,
+        "llamacpp:prompt_seconds_total": 8.737,
+        "llamacpp:tokens_predicted_seconds_total": 68.8827,
+        "llamacpp:requests_processing": 0.0
+      }
+    }
+  },
+  "all_checks_passed": true
+}

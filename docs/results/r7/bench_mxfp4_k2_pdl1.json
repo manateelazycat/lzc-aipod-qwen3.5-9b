@@ -1,0 +1,106 @@
+{
+  "timestamp": "2026-11-26T07:52:40Z",
+  "label": "r7-mxfp4_k2_pdl1",
+  "url": "http://127.0.0.1:18156",
+  "model": "qwen3.5-9b-defiant-fable",
+  "c1": {
+    "median_decode_tok_s": 55.72,
+    "max_decode_tok_s": 60.78,
+    "median_e2e_tok_s": 54.35,
+    "median_ttft_ms": 117.09,
+    "think_decode_tok_s": 58.19,
+    "mtp_draft_n": 705,
+    "mtp_draft_accepted": 410,
+    "mtp_accept_rate": 0.5816,
+    "runs": [
+      {
+        "prompt_tokens": 74,
+        "completion_tokens": 256,
+        "ttft_ms": 134.11,
+        "decode_tok_s": 55.72,
+        "e2e_tok_s": 54.35,
+        "total_s": 4.7105
+      },
+      {
+        "prompt_tokens": 55,
+        "completion_tokens": 256,
+        "ttft_ms": 106.5,
+        "decode_tok_s": 60.78,
+        "e2e_tok_s": 59.5,
+        "total_s": 4.3022
+      },
+      {
+        "prompt_tokens": 81,
+        "completion_tokens": 256,
+        "ttft_ms": 117.09,
+        "decode_tok_s": 51.05,
+        "e2e_tok_s": 50.08,
+        "total_s": 5.1118
+      }
+    ]
+  },
+  "prefill": {
+    "prompt_tokens": 4080,
+    "ttft_ms": 1447.6,
+    "prefill_tok_s": 2818.46,
+    "server_prompt_per_second": 2838.49
+  },
+  "concurrency": {
+    "c4": {
+      "concurrency": 4,
+      "wall_s": 3.731,
+      "total_completion_tokens": 512,
+      "aggregate_tok_s": 137.23,
+      "per_stream_median_decode_tok_s": 44.27
+    },
+    "c8": {
+      "concurrency": 8,
+      "wall_s": 4.828,
+      "total_completion_tokens": 1024,
+      "aggregate_tok_s": 212.1,
+      "per_stream_median_decode_tok_s": 31.48
+    }
+  },
+  "checks": {
+    "math_17x23_fast": {
+      "pass": true,
+      "answer": "391"
+    },
+    "math_4386_think": {
+      "pass": false,
+      "reasoning_len": 7695,
+      "answer": ""
+    },
+    "tool_call": {
+      "pass": true,
+      "calls": [
+        {
+          "name": "get_weather",
+          "arguments": "{\"city\":\"Tokyo\",\"unit\":\"celsius\"}"
+        }
+      ],
+      "raw_content": ""
+    },
+    "vision_multimodal": {
+      "pass": true,
+      "answer": "red and blue"
+    },
+    "needle_16k": {
+      "pass": true,
+      "expected": "JUNIPER-PYLON-9737",
+      "prompt_tokens": 15932,
+      "answer": "JUNIPER-PYLON-9737"
+    },
+    "metrics_delta": {
+      "pass": true,
+      "delta": {
+        "llamacpp:prompt_tokens_total": 21489.0,
+        "llamacpp:tokens_predicted_total": 5693.0,
+        "llamacpp:prompt_seconds_total": 9.0211,
+        "llamacpp:tokens_predicted_seconds_total": 109.3564,
+        "llamacpp:requests_processing": 0.0
+      }
+    }
+  },
+  "all_checks_passed": false
+}

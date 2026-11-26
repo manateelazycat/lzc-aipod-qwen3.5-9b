@@ -1,0 +1,28 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r13/r13_prefill4k.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r13/r13_prefill4k.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r13/r13_prefill4k.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+62.1,847824345,9,94202705.0,4287.0,2139,806369568,267413574.5,cudaEventSynchronize
+10.6,144754978,2452,59035.5,3361.0,2732,5852314,396142.3,cudaLaunchKernelExC
+8.1,110899646,8,13862455.8,56023.5,602,93599137,32478296.0,cuKernelSetAttribute
+6.7,91464568,1508,60652.9,3296.0,2760,4164355,279536.0,cudaLaunchKernel
+3.6,49100191,256,191797.6,3472.5,2935,5703284,664539.6,cuLaunchKernelEx
+3.1,41850638,36,1162517.7,4879.5,676,24950606,4679849.5,cudaStreamSynchronize
+2.3,31537180,653,48295.8,3796.0,2074,2883475,298449.5,cudaMemcpyAsync
+1.7,23026839,4,5756709.8,27749.5,14185,22957155,11466965.4,cudaHostUnregister
+1.2,16378455,48,341217.8,4694.5,3768,2719974,898570.0,cudaMemcpy2DAsync
+0.5,6923542,4,1730885.5,2213576.5,71566,2424823,1111883.6,cudaHostRegister
+0.1,1338269,2,669134.5,669134.5,667755,670514,1950.9,cuMemCreate
+0.0,516912,2,258456.0,258456.0,256021,260891,3443.6,cuMemSetAccess
+0.0,291735,4,72933.8,67987.0,42427,113334,33924.5,cuLibraryLoadData
+0.0,182722,1508,121.2,102.0,92,2065,99.6,cuKernelGetName
+0.0,63505,512,124.0,111.0,64,1527,83.1,cuKernelGetAttribute
+0.0,38046,6,6341.0,6439.5,2639,11862,3471.9,cudaEventRecord
+0.0,24455,2,12227.5,12227.5,7389,17066,6842.7,cuMemMap
+0.0,18360,3,6120.0,6120.0,5824,6416,296.0,cudaStreamWaitEvent
+0.0,1759,4,439.8,453.5,296,556,123.4,cuLibraryGetKernel
+0.0,740,2,370.0,370.0,333,407,52.3,cuMemRelease
+

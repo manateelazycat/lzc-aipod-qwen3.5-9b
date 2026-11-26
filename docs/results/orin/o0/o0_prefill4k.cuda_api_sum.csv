@@ -1,0 +1,16 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/o0/o0_prefill4k.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/o0/o0_prefill4k.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/o0/o0_prefill4k.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+54.9,2751809532,32,85994047.9,26992.5,1120,330456267,140429526.8,cudaStreamSynchronize
+43.5,2178401897,14864,146555.6,9888.0,6560,34459512,635667.9,cudaLaunchKernel
+0.9,44593618,512,87096.9,9280.0,7392,1461777,268455.4,cudaMemsetAsync
+0.3,14308585,3,4769528.3,4898682.0,4095760,5314143,619374.5,cudaHostRegister
+0.2,11301474,64,176585.5,9536.0,7584,1239503,345493.6,cudaLaunchKernelExC
+0.1,4884675,14864,328.6,288.0,128,14208,198.8,cuKernelGetName
+0.1,3775725,3,1258575.0,1232943.0,1161678,1381104,111936.1,cudaHostUnregister
+0.1,2727230,232,11755.3,4928.0,3872,336004,28633.2,cudaMemcpyAsync
+

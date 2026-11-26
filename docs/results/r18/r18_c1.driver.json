@@ -1,0 +1,58 @@
+{
+  "window": "r18_c1",
+  "wallSec": 5.4013,
+  "metricsDelta": {
+    "llamacpp:spec_decode_num_accepted_tokens_per_pos_total": 123.0,
+    "llamacpp:tokens_predicted_total": 256.0,
+    "llamacpp:n_decode_total": 135.0,
+    "llamacpp:spec_decode_num_draft_tokens_total": 384.0,
+    "llamacpp:spec_decode_num_accepted_tokens_total": 123.0,
+    "llamacpp:prompt_tokens_seconds": -346.046,
+    "llamacpp:prompt_tokens_cached_total": 0.0,
+    "llamacpp:requests_deferred": 0.0,
+    "llamacpp:n_busy_slots_per_decode": 0.0,
+    "llamacpp:prompt_seconds_total": 0.2085,
+    "llamacpp:predicted_tokens_seconds": 24.5809,
+    "llamacpp:prompt_tokens_total": 111.0,
+    "llamacpp:spec_decode_num_drafts_total": 129.0,
+    "llamacpp:requests_processing": 0.0,
+    "llamacpp:tokens_predicted_seconds_total": 5.1728,
+    "llamacpp:n_tokens_max": 0.0
+  },
+  "details": {
+    "runs": [
+      {
+        "prompt_tokens": 65,
+        "completion_tokens": 128,
+        "ttft_ms": 127.62,
+        "total_s": 2.9344,
+        "decode_s": 2.8068,
+        "decode_tok_s": 45.25,
+        "e2e_tok_s": 43.62,
+        "finish_reason": "length",
+        "content": "Great question. I\u2019ll give a concise, concrete, architecture-aware answer that ties unified-memory, cache hierarchies, and memory subsystems to the bandwidth-bound decoding latency of hybrid linear/full attention.\n\nKey idea: In modern GPUs, decoding latency is often limited not by compute but by how fast you can:\n- feed tokens into the attention engine,\n- move KV-cache and activations between L1/L2/shared and HBM/DDR,\n- and keep the memory subsystem saturated without stalling.\n\nBelow is the chain of effects, with numbers.\n\n1. Unified-memory layout and the \u201cone big address space\u201d",
+        "reasoning": "",
+        "server_predicted_per_second": 45.25,
+        "server_prompt_per_second": 551.59,
+        "draft_n": 207,
+        "draft_n_accepted": 56
+      },
+      {
+        "prompt_tokens": 46,
+        "completion_tokens": 128,
+        "ttft_ms": 100.32,
+        "total_s": 2.4666,
+        "decode_s": 2.3663,
+        "decode_tok_s": 53.67,
+        "e2e_tok_s": 51.89,
+        "finish_reason": "length",
+        "content": "```python\n\"\"\"\nBounded Lock-Free Style Ring Buffer Simulator\n\nThis module implements a bounded, lock-free style ring buffer with:\n- Producer/Consumer backpressure metrics\n- Non-blocking operations (no Python GIL contention)\n- Deterministic simulation for testing\n- Unit tests verifying core behaviors\n\nDesign notes:\n- Uses a single shared state with atomic-style operations via threading.Lock for\n  simulation purposes (in real lock-free code you'd use CAS/LLSCW).\n- Backpressure is tracked via wait events and queue occupancy.\n- Bounded capacity enforced; producers block when full, consumers block when empty",
+        "reasoning": "",
+        "server_predicted_per_second": 53.67,
+        "server_prompt_per_second": 490.34,
+        "draft_n": 177,
+        "draft_n_accepted": 67
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r18/r18_c1.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r18/r18_c1.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r18/r18_c1.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+91.4,4700754926,5827,806719.6,889.0,638,32542431,4155056.4,cudaStreamSynchronize
+4.0,206580190,1386,149047.8,194970.0,11972,899565,98443.2,cudaGraphLaunch
+1.5,79014680,517,152833.0,1731.0,1120,41521702,2428859.8,cudaEventSynchronize
+1.0,52123544,11994,4345.8,3334.0,1093,700044,21402.3,cudaLaunchKernelExC
+0.9,43997709,2260,19468.0,3361.0,1093,13783659,408950.5,cudaLaunchKernel
+0.8,40227902,8148,4937.2,2713.0,1204,587672,10495.0,cudaMemcpyAsync
+0.2,10434507,6,1739084.5,2095399.5,92056,2954917,1094568.9,cudaHostRegister
+0.0,2215411,2,1107705.5,1107705.5,1059539,1155872,68117.7,cuLibraryLoadData
+0.0,959119,17,56418.8,49926.0,2713,112325,36306.4,cudaGraphDestroy
+0.0,846002,17,49764.8,53899.0,5213,83121,26612.5,cudaGraphExecUpdate
+0.0,720125,270,2667.1,2500.0,1518,8509,1056.3,cudaEventRecord
+0.0,601286,2329,258.2,241.0,186,2213,82.3,cudaGraphKernelNodeGetAttribute
+0.0,549007,2377,231.0,222.0,203,1602,52.6,cudaGraphNodeGetType
+0.0,486310,2048,237.5,223.0,167,1824,92.2,cudaStreamIsCapturing
+0.0,345916,135,2562.3,2157.0,1565,6362,962.4,cudaStreamWaitEvent
+0.0,276272,2260,122.2,102.0,55,2380,110.6,cuKernelGetName
+0.0,223411,48,4654.4,4213.0,3759,12713,1622.3,cudaMemcpy2DAsync
+0.0,136759,6,22793.2,23495.0,12361,31352,7981.3,cudaHostUnregister
+0.0,113881,7,16268.7,7510.0,5343,40917,13637.6,cuLaunchKernel
+0.0,94207,17,5541.6,5649.0,778,9805,2959.3,cudaStreamEndCapture
+0.0,41139,17,2419.9,1862.0,1305,5361,1273.0,cudaStreamBeginCapture
+0.0,32566,34,957.8,833.0,241,2379,533.9,cudaGraphGetNodes
+0.0,12372,9,1374.7,1417.0,695,2334,529.1,cuLibraryGetKernel
+

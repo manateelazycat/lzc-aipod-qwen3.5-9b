@@ -1,0 +1,30 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r11/r11_c1.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r11/r11_c1.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r11/r11_c1.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+92.5,4880978022,4780,1021125.1,907.0,639,33556601,4979528.0,cudaStreamSynchronize
+3.8,201822941,1275,158292.5,212361.0,11343,397600,95842.9,cudaGraphLaunch
+1.5,79303966,487,162841.8,1601.0,1000,41830463,2517709.0,cudaEventSynchronize
+0.8,42716089,9632,4434.8,3222.0,1102,728525,24108.4,cudaLaunchKernelExC
+0.6,33619955,6775,4962.4,2731.0,1240,254258,8429.7,cudaMemcpyAsync
+0.3,15966893,2086,7654.3,3324.0,1148,729961,39538.3,cudaLaunchKernel
+0.2,10365372,6,1727562.0,2185682.5,78963,2717389,1075901.6,cudaHostRegister
+0.1,6284904,8,785613.0,886418.0,80009,1330597,469157.8,cudaGraphInstantiate
+0.0,835883,17,49169.6,55732.0,2528,93537,29010.2,cudaGraphDestroy
+0.0,651906,2535,257.2,241.0,194,1805,62.7,cudaGraphKernelNodeGetAttribute
+0.0,643862,268,2402.5,2305.0,1519,7870,792.6,cudaEventRecord
+0.0,618130,2583,239.3,223.0,167,12704,249.4,cudaGraphNodeGetType
+0.0,538676,9,59852.9,60250.0,8667,102296,34133.3,cudaGraphExecUpdate
+0.0,445018,96,4635.6,4287.0,3555,11306,1257.1,cudaMemcpy2DAsync
+0.0,264505,134,1973.9,1833.0,1334,6129,561.0,cudaStreamWaitEvent
+0.0,251343,2086,120.5,102.0,46,2407,92.7,cuKernelGetName
+0.0,136520,6,22753.3,24500.0,12593,30213,7274.6,cudaHostUnregister
+0.0,97221,7,13888.7,6176.0,3898,33741,11563.8,cuLaunchKernel
+0.0,90066,17,5298.0,5769.0,741,11445,2798.7,cudaStreamEndCapture
+0.0,54231,34,1595.0,1023.0,250,6361,1522.8,cudaGraphGetNodes
+0.0,35702,17,2100.1,1444.0,1157,5370,1338.9,cudaStreamBeginCapture
+0.0,10546,7,1506.6,1583.0,630,2472,647.9,cuLibraryGetKernel
+

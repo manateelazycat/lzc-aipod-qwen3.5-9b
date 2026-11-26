@@ -1,0 +1,30 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r4/r4_c1.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r4/r4_c1.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r4/r4_c1.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+92.8,5768508887,4172,1382672.3,999.5,648,32335193,5431549.5,cudaStreamSynchronize
+4.0,249274860,1405,177419.8,218512.0,11167,553647,100458.0,cudaGraphLaunch
+1.3,79609489,552,144220.1,1574.0,954,42101403,2371060.8,cudaEventSynchronize
+0.7,43340386,9437,4592.6,3315.0,1111,803651,24688.5,cudaLaunchKernelExC
+0.5,33944767,6240,5439.9,2759.0,1232,228003,8983.0,cudaMemcpyAsync
+0.3,16056442,2090,7682.5,3370.0,1166,714380,39290.1,cudaLaunchKernel
+0.2,10519750,6,1753291.7,2099400.0,80381,3236267,1152884.6,cudaHostRegister
+0.1,9067366,9,1007485.1,1049210.0,120167,1871119,600254.7,cudaGraphInstantiate
+0.0,1417131,17,83360.6,56288.0,2213,202540,69656.6,cudaGraphDestroy
+0.0,831761,326,2551.4,2375.5,1500,10371,1094.5,cudaEventRecord
+0.0,788330,2534,311.1,259.0,176,7833,193.2,cudaGraphKernelNodeGetAttribute
+0.0,645991,2582,250.2,222.0,176,1879,86.7,cudaGraphNodeGetType
+0.0,536602,8,67075.3,71616.5,8852,109873,39806.4,cudaGraphExecUpdate
+0.0,454852,96,4738.0,4486.5,3722,10603,1088.3,cudaMemcpy2DAsync
+0.0,336772,163,2066.1,1879.0,1463,7102,658.0,cudaStreamWaitEvent
+0.0,251473,2090,120.3,102.0,92,1954,91.1,cuKernelGetName
+0.0,139466,6,23244.3,23806.0,10917,32251,7383.3,cudaHostUnregister
+0.0,139069,17,8180.5,6796.0,982,17177,5236.2,cudaStreamEndCapture
+0.0,107873,34,3172.7,1148.0,240,14889,4705.8,cudaGraphGetNodes
+0.0,94613,7,13516.1,8325.0,4731,32092,10755.7,cuLaunchKernel
+0.0,53148,17,3126.4,2500.0,1305,13898,2931.8,cudaStreamBeginCapture
+0.0,25704,5,5140.8,1296.0,1203,19612,8103.6,cuLibraryGetKernel
+

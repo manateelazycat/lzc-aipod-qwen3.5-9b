@@ -1,0 +1,11 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r13/r13_prefill4k.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r13/r13_prefill4k.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r13/r13_prefill4k.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_gpu_mem_time_sum.py]... 
+Time (%),Total Time (ns),Count,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Operation
+57.5,3168183,382,8293.7,3600.0,1280,87649,10583.8,[CUDA memcpy Device-to-Host]
+33.4,1840046,55,33455.4,2496.0,288,558820,114453.2,[CUDA memcpy Host-to-Device]
+9.1,504028,264,1909.2,2080.0,1024,8704,754.7,[CUDA memcpy Device-to-Device]
+

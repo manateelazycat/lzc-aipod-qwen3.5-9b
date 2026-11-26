@@ -1,0 +1,49 @@
+{
+  "meminfo_before_mb": {
+    "MemTotal": 125810.2,
+    "MemFree": 33752.9,
+    "MemAvailable": 99565.3
+  },
+  "server_rss_before_mb": 6997.9,
+  "gates": {
+    "guard_induced_loop": {
+      "finish_reason": "stop",
+      "completion_tokens": 98,
+      "elapsed_s": 1.37,
+      "pass": true
+    },
+    "guard_markdown_table_no_fp": {
+      "finish_reason": "stop",
+      "has_all_12_rows": true,
+      "content_len": 619,
+      "pass": true
+    },
+    "guard_ignore_eos_bypass": {
+      "finish_reason": "length",
+      "completion_tokens": 220,
+      "pass": true
+    },
+    "default_sampling_non_greedy": {
+      "finish_reason": "stop",
+      "answer": "399",
+      "pass": true
+    }
+  },
+  "long_context": {
+    "target_tokens": 100000,
+    "actual_prompt_tokens": 116070,
+    "elapsed_s": 80.18,
+    "approx_prefill_tok_s": 1447.58,
+    "expected": "TITAN-OBSIDIAN-7194",
+    "answer": "TITAN-OBSIDIAN-7194",
+    "finish_reason": "stop",
+    "pass": true
+  },
+  "meminfo_after_mb": {
+    "MemTotal": 125810.2,
+    "MemFree": 32753.7,
+    "MemAvailable": 98564.3
+  },
+  "server_rss_after_mb": 7996.1,
+  "all_passed": true
+}

@@ -1,0 +1,106 @@
+{
+  "timestamp": "2026-11-26T07:11:16Z",
+  "label": "r3-thor-uma-l2-k2",
+  "url": "http://127.0.0.1:18156",
+  "model": "qwen3.5-9b-defiant-fable",
+  "c1": {
+    "median_decode_tok_s": 44.95,
+    "max_decode_tok_s": 48.64,
+    "median_e2e_tok_s": 44.25,
+    "median_ttft_ms": 112.48,
+    "think_decode_tok_s": 49.83,
+    "mtp_draft_n": 715,
+    "mtp_draft_accepted": 405,
+    "mtp_accept_rate": 0.5664,
+    "runs": [
+      {
+        "prompt_tokens": 67,
+        "completion_tokens": 256,
+        "ttft_ms": 112.48,
+        "decode_tok_s": 44.95,
+        "e2e_tok_s": 44.25,
+        "total_s": 5.7848
+      },
+      {
+        "prompt_tokens": 48,
+        "completion_tokens": 256,
+        "ttft_ms": 99.96,
+        "decode_tok_s": 48.64,
+        "e2e_tok_s": 47.91,
+        "total_s": 5.3429
+      },
+      {
+        "prompt_tokens": 74,
+        "completion_tokens": 256,
+        "ttft_ms": 116.1,
+        "decode_tok_s": 41.88,
+        "e2e_tok_s": 41.26,
+        "total_s": 6.2045
+      }
+    ]
+  },
+  "prefill": {
+    "prompt_tokens": 4128,
+    "ttft_ms": 3201.12,
+    "prefill_tok_s": 1289.55,
+    "server_prompt_per_second": 1293.69
+  },
+  "concurrency": {
+    "c4": {
+      "concurrency": 4,
+      "wall_s": 4.174,
+      "total_completion_tokens": 512,
+      "aggregate_tok_s": 122.65,
+      "per_stream_median_decode_tok_s": 41.24
+    },
+    "c8": {
+      "concurrency": 8,
+      "wall_s": 5.494,
+      "total_completion_tokens": 1024,
+      "aggregate_tok_s": 186.37,
+      "per_stream_median_decode_tok_s": 27.54
+    }
+  },
+  "checks": {
+    "math_17x23_fast": {
+      "pass": true,
+      "answer": "391"
+    },
+    "math_4386_think": {
+      "pass": true,
+      "reasoning_len": 3270,
+      "answer": "1 = 8$\n    *   $9 + 4 = 13$ (write down 3, carry over 1)\n    *   $3 + 1 = 4$\n\n**Final Answer:**\n4386"
+    },
+    "tool_call": {
+      "pass": true,
+      "calls": [
+        {
+          "name": "get_weather",
+          "arguments": "{\"city\":\"Tokyo\",\"unit\":\"celsius\"}"
+        }
+      ],
+      "raw_content": ""
+    },
+    "vision_multimodal": {
+      "pass": true,
+      "answer": "red and blue"
+    },
+    "needle_16k": {
+      "pass": true,
+      "expected": "JUNIPER-PYLON-9737",
+      "prompt_tokens": 15932,
+      "answer": "JUNIPER-PYLON-9737"
+    },
+    "metrics_delta": {
+      "pass": true,
+      "delta": {
+        "llamacpp:prompt_tokens_total": 21425.0,
+        "llamacpp:tokens_predicted_total": 4391.0,
+        "llamacpp:prompt_seconds_total": 17.6919,
+        "llamacpp:tokens_predicted_seconds_total": 104.538,
+        "llamacpp:requests_processing": 0.0
+      }
+    }
+  },
+  "all_checks_passed": true
+}

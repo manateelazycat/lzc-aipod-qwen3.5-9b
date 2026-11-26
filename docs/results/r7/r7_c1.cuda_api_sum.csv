@@ -1,0 +1,30 @@
+
+NOTICE: Existing SQLite export found: /home/nvidia/qwen35-9b-work/results/r7/r7_c1.sqlite
+        It is assumed file was previously exported from: /home/nvidia/qwen35-9b-work/results/r7/r7_c1.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/home/nvidia/qwen35-9b-work/results/r7/r7_c1.sqlite] with [/opt/nvidia/nsight-systems/2026.3.1/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+92.4,4984813622,4846,1028645.0,936.0,612,32355009,4601153.1,cudaStreamSynchronize
+4.0,214010236,1303,164244.2,214318.0,11454,405681,100889.2,cudaGraphLaunch
+1.5,79397468,505,157222.7,1621.0,972,41846612,2474077.9,cudaEventSynchronize
+0.8,44941118,10440,4304.7,3204.0,1130,726269,22811.9,cudaLaunchKernelExC
+0.6,35038218,6933,5053.8,2732.0,1241,234087,8490.9,cudaMemcpyAsync
+0.3,16237638,2146,7566.5,3334.0,1176,727325,39147.2,cudaLaunchKernel
+0.2,10060165,6,1676694.2,2034310.0,94834,2708685,1056168.6,cudaHostRegister
+0.1,6343135,8,792891.9,844035.0,83538,1435529,481732.1,cudaGraphInstantiate
+0.0,830900,17,48876.5,57233.0,2315,80927,28394.9,cudaGraphDestroy
+0.0,673628,276,2440.7,2417.0,1417,8371,947.0,cudaEventRecord
+0.0,659262,2535,260.1,241.0,176,1787,60.2,cudaGraphKernelNodeGetAttribute
+0.0,606093,2583,234.6,222.0,157,1278,45.4,cudaGraphNodeGetType
+0.0,508904,9,56544.9,58343.0,6472,107723,34041.7,cudaGraphExecUpdate
+0.0,434024,96,4521.1,4255.0,3555,12213,1238.2,cudaMemcpy2DAsync
+0.0,294075,138,2131.0,1963.0,1565,5157,594.0,cudaStreamWaitEvent
+0.0,258676,2146,120.5,102.0,37,2111,88.7,cuKernelGetName
+0.0,129527,6,21587.8,23310.5,11712,28361,6491.3,cudaHostUnregister
+0.0,105818,7,15116.9,8704.0,5158,33816,11295.0,cuLaunchKernel
+0.0,97761,17,5750.6,5972.0,695,10453,3058.5,cudaStreamEndCapture
+0.0,54494,34,1602.8,1144.0,278,4991,1378.2,cudaGraphGetNodes
+0.0,39475,17,2322.1,1796.0,1305,5352,1245.0,cudaStreamBeginCapture
+0.0,18758,7,2679.7,1824.0,833,9064,2901.2,cuLibraryGetKernel
+

@@ -1,0 +1,24 @@
+package: cloud.lazycat.aipod.qwen35-9b-defiant-fable
+version: 0.2.2
+name: Qwen 3.5 9B
+description: Qwen3.5-9B The Defiant Fable (Uncensored Heretic NEO-IMATRIX-MAX-MTP) 图文多模态大模型，针对 Jetson AGX Thor SM110a 与 AGX Orin 64GB SM87 双平台深度优化
+author: AI Pod
+license: https://www.apache.org/licenses/LICENSE-2.0
+homepage: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
+locales:
+  zh:
+    name: Qwen 3.5 9B
+    description: Qwen3.5-9B 图文多模态模型（Jetson AGX Thor SM110a 与 AGX Orin 64GB SM87 原生 CUDA 优化 + 无损 MTP 投机解码，支持 16K–256K 上下文、视觉理解、深度思考与工具调用）
+  zh_CN:
+    name: Qwen 3.5 9B
+    description: Qwen3.5-9B 图文多模态模型（Jetson AGX Thor SM110a 与 AGX Orin 64GB SM87 原生 CUDA 优化 + 无损 MTP 投机解码，支持 16K–256K 上下文、视觉理解、深度思考与工具调用）
+  en:
+    name: Qwen 3.5 9B
+    description: Qwen3.5-9B Defiant Fable multimodal LLM (Jetson AGX Thor SM110a & AGX Orin 64GB SM87 native CUDA kernels + lossless MTP speculative decoding, 16K–256K context, vision, reasoning & tools)
+permissions:
+  required:
+    - net.internet
+    - net.lan
+    - document.read
+    - document.write
+    - lzcapp.user_delegate

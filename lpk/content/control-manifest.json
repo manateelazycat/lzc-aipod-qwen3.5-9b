@@ -1,0 +1,12 @@
+{
+  "schema": "model-host.control-manifest.v1",
+  "status": "released",
+  "package": "cloud.lazycat.aipod.qwen35-9b-defiant-fable",
+  "version": "0.2.0",
+  "binaryName": "qwen35-9b-lpk",
+  "binarySha256": "0b3500d89b0b005c2667112da3efde4bdff9111c2faa602145d99f1d430f3046",
+  "size": 3050970,
+  "sha256": "f41fa16099839f42fbd7db3c9d605299165a6c929914073816f68fabdf21adf2",
+  "modelscopeUrl": "https://modelscope.cn/models/manateelazycat/Qwen3.5-9B-Defiant-Fable-Runtime/resolve/900e85b2428b955b83ea21ccd915d78537374bef/control/qwen35-9b-lpk-amd64-control-f41fa1609983.tar.gz",
+  "huggingfaceUrl": "https://huggingface.co/manateelazycat/Qwen3.5-9B-Defiant-Fable-Runtime/resolve/e26855afabcd108a7ad9d14fd3e8d849c3b413c2/control/qwen35-9b-lpk-amd64-control-f41fa1609983.tar.gz"
+}

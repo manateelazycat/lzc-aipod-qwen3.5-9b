@@ -1,0 +1,37 @@
+{
+  "meminfo_before_mb": {
+    "MemTotal": 125810.2,
+    "MemFree": 18751.5,
+    "MemAvailable": 97108.3
+  },
+  "gates": {
+    "guard_induced_loop": {
+      "finish_reason": "stop",
+      "completion_tokens": 98,
+      "elapsed_s": 1.1,
+      "pass": true
+    },
+    "guard_markdown_table_no_fp": {
+      "finish_reason": "stop",
+      "has_all_12_rows": true,
+      "content_len": 619,
+      "pass": true
+    },
+    "guard_ignore_eos_bypass": {
+      "finish_reason": "length",
+      "completion_tokens": 220,
+      "pass": true
+    },
+    "default_sampling_non_greedy": {
+      "finish_reason": "stop",
+      "answer": "399",
+      "pass": true
+    }
+  },
+  "meminfo_after_mb": {
+    "MemTotal": 125810.2,
+    "MemFree": 17995.1,
+    "MemAvailable": 96351.9
+  },
+  "all_passed": true
+}
